@@ -1,6 +1,3 @@
-import rmi.objects.Calculadora;
-import rmi.objects.impl.CalculadoraImpl;
-
 import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;
 import java.rmi.Naming;
@@ -8,10 +5,13 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
+import rmi.objects.Calculadora;
+import rmi.objects.impl.CalculadoraImpl;
+
 public class Servidor {
     public static void main(String[] args) {
         try {
-            Calculadora calculadora =new CalculadoraImpl();
+            Calculadora calculadora = new CalculadoraImpl();
 
             //criando um registry na porta especificada
             Registry registry = LocateRegistry.createRegistry(8080);
