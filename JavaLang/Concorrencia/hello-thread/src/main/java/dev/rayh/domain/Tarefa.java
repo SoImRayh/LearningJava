@@ -16,7 +16,7 @@ public class Tarefa implements Runnable{
     @Override
     public void run() 
     {
-        so
+        
         BigInteger fatorial= BigInteger.ONE;
         for (int i = 1; i <= num; i++) {
             fatorial = fatorial.multiply(BigInteger.valueOf(i));
